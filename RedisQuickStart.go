@@ -29,6 +29,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	fmt.Println("Redis is a fast, in-memory database specializing in key/value pairs")
 	fmt.Println("key", val)
 
 	val2, err := rdb.Get(ctx, "key2").Result()
