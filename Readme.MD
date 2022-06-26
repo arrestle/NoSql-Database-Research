@@ -9,8 +9,9 @@ Steps
 - [ ] `mkdir ~data mkdir ~/data/`
 - [ ] `mongod -dbpath ~/data/db`
 - [ ] `go get go.mongodb.org/mongo-driver/mongo`
-- [ ] Create a new, free developer account on [neo4j.com](https://neo4j.com/) copy the user/pass and set the password as a environment variable in your .zshrc or other startup file. 
+- [ ] Create a new, free developer account on [neo4j.com](https://neo4j.com/) copy the user/pass and set the password as a environment variable NEO4J_PASSWORD in your .zshrc or other startup file. 
 - [ ] go get github.com/neo4j/neo4j-go-driver/v4/neo4j
+- [ ] ./cypher-shell -a neo4j+s://8c9db34b.databases.neo4j.io -u neo4j -p "$NEO4J_PASSWORD"
 
 ## References
 - [Linked in Learning - Cloud NoSQL](https://www.linkedin.com/learning/cloud-nosql-for-sql-professionals)
